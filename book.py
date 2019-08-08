@@ -23,3 +23,12 @@ occurrences there are and the most_common() method limits the results to ten
 words
 """
 print(collections.Counter(words).most_common(10))
+
+# Write to files
+
+# use r for read, w for write or a for append
+f = open('newfile.txt', 'a')
+lines = ['Hello','World','Welcome','To','File IO']
+text = '\n'.join(lines)
+f.writelines(text)
+f.close()

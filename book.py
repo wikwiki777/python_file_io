@@ -31,4 +31,10 @@ f = open('newfile.txt', 'a')
 lines = ['Hello','World','Welcome','To','File IO']
 text = '\n'.join(lines)
 f.writelines(text)
+# Set cursor
+f.seek(0)
+
+# lookup cursor
+f.tell()
+
 f.close()
